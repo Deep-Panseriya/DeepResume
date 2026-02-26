@@ -1,0 +1,125 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            color: #334155;
+            line-height: 1.5;
+        }
+        .resume-container {
+            width: 100%;
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Desktop specific margin */
+        @media (min-width: 768px) {
+            .resume-container {
+                margin: 40px auto;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            }
+        }
+
+        .header {
+            background-color: #1a365d;
+            color: white;
+            padding: 30px 20px;
+        }
+        @media (min-width: 768px) {
+            .header {
+                padding: 40px 50px;
+            }
+        }
+
+        .highlight-box {
+            background-color: #c08552;
+            color: white;
+            padding: 2px 8px;
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            width: auto;
+            max-width: 100%;
+            word-break: break-all;
+        }
+        @media (min-width: 768px) {
+            .highlight-box {
+                font-size: 0.85rem;
+            }
+        }
+
+        .highlight-box .material-icons {
+            font-size: 14px;
+            margin-right: 6px;
+            flex-shrink: 0;
+        }
+        .section-title {
+            color: #1a365d;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 2px solid #1a365d;
+            padding-bottom: 4px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+        }
+        .skill-tag {
+            border-bottom: 1px solid #94a3b8;
+            padding: 4px 0;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-right: 12px;
+            margin-bottom: 12px;
+        }
+        .experience-item {
+            margin-bottom: 24px;
+        }
+        .date-loc {
+            color: #64748b;
+            font-size: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 4px;
+            align-items: center;
+        }
+        @media (min-width: 768px) {
+            .date-loc {
+                gap: 15px;
+            }
+        }
+        .date-loc .material-icons {
+            font-size: 12px;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+        .bullet-list {
+            list-style-type: none;
+            padding-left: 15px;
+            margin-top: 8px;
+        }
+        .bullet-list li {
+            position: relative;
+            margin-bottom: 4px;
+            font-size: 0.85rem;
+        }
+        .bullet-list li::before {
+            content: "•";
+            position: absolute;
+            left: -15px;
+            color: #1a365d;
+        }
+        @media print {
+            body { background: none; }
+            .resume-container { 
+                margin: 0; 
+                box-shadow: none; 
+                max-width: none;
+                width: 210mm;
+            }
+        }
